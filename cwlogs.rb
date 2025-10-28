@@ -5,21 +5,21 @@
 class Cwlogs < Formula
   desc "Fast, terminal-based AWS CloudWatch log viewer"
   homepage "https://github.com/teaguru/cwlogs"
-  version "1.1.2"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/teaguru/cwlogs/releases/download/v1.1.2/cwlogs-1.1.2-Darwin-x86_64.tar.gz"
-      sha256 "92341aed15bdcda46cc80201b891b947f14462758679cc6b78fbeae85da86228"
+      url "https://github.com/teaguru/cwlogs/releases/download/v1.2.0/cwlogs-1.2.0-Darwin-x86_64.tar.gz"
+      sha256 "71334bf8044cd6b3d2885598c26918f9cdd0e48e8adf204cf72d7983460adb96"
 
       def install
         bin.install "cwlogs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/teaguru/cwlogs/releases/download/v1.1.2/cwlogs-1.1.2-Darwin-arm64.tar.gz"
-      sha256 "75c7df5082a051fa971a416a17b234eec4f7c8d81aa5929162817ee0487233c4"
+      url "https://github.com/teaguru/cwlogs/releases/download/v1.2.0/cwlogs-1.2.0-Darwin-arm64.tar.gz"
+      sha256 "9518dd60c97cd7bd5fa93e98c4fbf47c2fa4e46d2527544921404c0842cdccb0"
 
       def install
         bin.install "cwlogs"
@@ -29,15 +29,15 @@ class Cwlogs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/teaguru/cwlogs/releases/download/v1.1.2/cwlogs-1.1.2-Linux-x86_64.tar.gz"
-      sha256 "d0f82a35a9351f62c5acba40d6c4409631439044f8dcd86aa039fd63f27b331d"
+      url "https://github.com/teaguru/cwlogs/releases/download/v1.2.0/cwlogs-1.2.0-Linux-x86_64.tar.gz"
+      sha256 "0475e3450fc1c91d2d779dff7cf95645759e928422a8f7a5af2f1134ba59ac77"
       def install
         bin.install "cwlogs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/teaguru/cwlogs/releases/download/v1.1.2/cwlogs-1.1.2-Linux-arm64.tar.gz"
-      sha256 "7503eda903944d594b862dd43bfe9907d3a3037c908fc4a13bbf02649d64ad89"
+      url "https://github.com/teaguru/cwlogs/releases/download/v1.2.0/cwlogs-1.2.0-Linux-arm64.tar.gz"
+      sha256 "815b8e34990892b5e2b37a2d45a68eeb93544e2c9ca2370f2af5f1618907d7d4"
       def install
         bin.install "cwlogs"
       end
